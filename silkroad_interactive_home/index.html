@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Silk Road Map</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Silk Road Interactive Map</h1>
+  <div class="map-container">
+    <img src="map.png" alt="Silk Road Map">
+    <button class="dot" style="top: 38%; left: 12%;" onclick="showImage('mogao.jpg')">Mogao</button>
+    <button class="dot" style="top: 52%; left: 20%;" onclick="showImage('maijishan.jpg')">Maijishan</button>
+    <button class="dot" style="top: 28%; left: 22%;" onclick="showImage('jiaohe.jpg')">Jiaohe</button>
+    <button class="dot" style="top: 30%; left: 27%;" onclick="showImage('gaochang.jpg')">Gaochang</button>
+    <button class="dot" style="top: 60%; left: 40%;" onclick="showImage('longmen.jpg')">Longmen</button>
+  </div>
+
+  <div class="preview">
+    <img id="preview-img" src="" alt="Site Preview">
+  </div>
+
+  <script>
+    function showImage(imgName) {
+      document.getElementById('preview-img').src = imgName;
+    }
+  </script>
+</body>
+</html>
