@@ -1,5 +1,13 @@
-body { font-family: sans-serif; margin: 0; padding: 0; }
-header { background-color: #f4f4f4; padding: 20px; text-align: center; }
+/* 通用设置 */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #222;
+}
+
+/* 横幅图 */
 .hero-banner {
   position: relative;
   width: 100%;
@@ -21,6 +29,37 @@ header { background-color: #f4f4f4; padding: 20px; text-align: center; }
   font-size: 1.8rem;
 }
 
-nav a { margin: 0 10px; text-decoration: none; }
-main { padding: 20px; }
-footer { background-color: #eee; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+/* 页眉导航 */
+header {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #0078D7;
+}
+
+/* 页面主区域 */
+main {
+  padding: 20px;
+  margin-bottom: 80px; /* 防止被footer遮住 */
+}
+
+/* 页脚 */
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  position: relative;  /* 改为相对定位，避免浮动遮挡内容 */
+  bottom: 0;
+  width: 100%;
+}
